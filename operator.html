@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        var b = 3;
+        var c= a + b;
+        c++;
+        c--;
+        c++;
+        c++;
+        c--;
+        document.writeln(c);
+        document.writeln("<br>");
+    </script>
+    <script>
+        var x = 13;
+        var y = "13";
+        if(x === y){
+            document.writeln("true");
+        }else{
+            document.writeln("false");
+        }
+        document.writeln("<br>");
+    </script>
+
+    <script>
+        var age = 18;
+        if(age >= 18 && age <= 100){
+            document.writeln("you can voyte");
+        }else{
+            document.writeln("you can not vote");
+        }
+        document.writeln("<br>");
+
+        var day = "Sunday";
+        if(day === "Saturday" || day === "Sunday"){
+            document.writeln("holiday");
+        }else{
+            document.writeln("working day");    
+        }
+        document.writeln("<br>");
+
+        var age = 12;
+        var eligible = (age >= 18)? "You can do mariage" : "You can not do mariage";
+        document.writeln(eligible);
+    </script>
+
+
+</body>
+</html>

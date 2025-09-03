@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <body>
+        <h1>
+            <button onclick="alert('Error Because of Click')">Click me!</button>
+            <button onclick="showmeg()">Internal !</button>
+            <button onclick="showmegg(), show()">Hey External !</button>
+        </h1>
+        <script>
+        function showmeg(){
+            alert('Hey internal cause error!!!!!!');
+        }
+    </script>
+    <script src="/Javascript/script.js"></script>
+    </body>
+</html>

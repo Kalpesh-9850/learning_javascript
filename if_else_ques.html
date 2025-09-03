@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Enter the month number");
+        num = Number(num);
+        if(num == 2){
+            document.writeln("Number of days is 28 or 29");
+        }else if(num == 8){
+            document.writeln("Number of days is 31");
+        }
+        else if(num % 2 == 0){
+            document.writeln("Number of days is 30");
+        }else if(num % 2 != 0){
+            document.writeln("Number of days is 31");
+        }
+    </script>
+    
+</body>
+</html>

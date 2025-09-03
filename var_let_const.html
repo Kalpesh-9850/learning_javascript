@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var_let_const</title>
+</head>
+<body>
+    <script>
+        var a = 100; //function scope
+        let b = 200; //block scope
+        const c = 300; //block scope
+
+        function scopeexam(){
+            var a = 1;
+            let b = 2;
+            const c = 3;
+            if(true){
+                var a = 10;
+                let b = 20;
+                const c = 30;
+                document.writeln(a);
+                document.writeln(b);
+                document.writeln(c);
+                document.write("<br>");
+            }
+             document.writeln(a);
+             document.writeln(b);
+             document.writeln(c);
+             document.write("<br>");
+
+        }
+        scopeexam();
+        document.writeln(a);
+        document.writeln(b);
+        document.writeln(c);
+        document.write("<br>");
+
+    </script>
+    
+</body>
+</html>

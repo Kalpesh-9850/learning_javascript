@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_loops</title>
+</head>
+<body>
+    <script>
+        var mixarr = [123, "Kalpesh" , true, 67.54];
+        var mixarr2 = [231, "Jayesh" , false, 77.54];
+        document.writeln("<b>Full Array : </b>" + mixarr + "<br>" + mixarr2);
+    </script>
+
+    <script>
+        var array = [10,20,30,40,50];
+         var sum = 0;
+        document.writeln("<br> <h1> <br><b>Array using Loop : </b> </h1> <ul>");
+        for(var i = 0; i < array.length; i++){
+            document.writeln("<br> <li>" + array[i] + "</li>");
+            sum += array[i];
+        }
+        document.writeln("</ul>");
+       
+        
+        document.writeln("<br> <b>Sum of Array : </b>" + sum);
+
+    </script>
+
+    <!--print array using while loop-->
+    <script>
+    var warr = [11,22,33,44,55];
+    var add = 0;
+    var i = 0;
+    document.writeln("<br> <h1> <br><b>Array using While Loop : </b> </h1> <ul>");
+    while(i < warr.length){
+        document.writeln("<br> <li>" + warr[i] + "</li>");
+        add += warr[i];
+        i++;
+        
+
+    }   
+    document.writeln("</ul>");
+    document.writeln("<br> <b>Sum of Array : </b>" + add);
+</script>
+
+<!--print array using do-while loop-->
+<script>
+    var darr = [100,200,300,400,500];
+    var dadd = 0;
+    var j = 0;
+    document.writeln("<br> <h1> <br><b>Array using Do-While Loop : </b> </h1> <ul>");
+    do{
+        document.writeln("<br> <li>" + darr[j] + "</li>");
+        dadd += darr[j];
+        j++;
+    }while(j < darr.length);
+    document.writeln("</ul>");
+    document.writeln("<br> <b>Sum of Array : </b>" + dadd);
+</script>
+
+    
+</body>
+</html>

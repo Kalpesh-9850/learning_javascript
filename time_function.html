@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time_Function</title>
+</head>
+<body>
+    <h1>Digital CLock</h1>
+    <h1 id = "clock"></h1>
+
+    <h1>Counter</h1>
+    <h1 id="count"></h1>
+    <button onclick="stopcount()">Stop</button>
+
+    <button onclick="increment()">increment</button>
+    <button onclick="decrement()">decrement</button>
+    
+
+    <h3 id="msg">Hi Kalpesh let's Go !!!</h3>
+    <script>
+        setTimeout(function(){
+            document.getElementById("msg").innerText = "Welcome to My realm";
+        }, 5000);
+    </script>
+
+
+    <script>
+    let count = 0;
+    document.getElementById("count").innerHTML = count;
+    function increment() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+    }
+    function decrement() {
+        count--;
+        document.getElementById("count").innerHTML = count;
+        if(count < 0){
+            count = 0;
+            document.getElementById("count").innerHTML = count;
+        }
+    }
+
+
+        function stopcount(){
+            count = 0;
+            document.getElementById("count").innerHTML = count;
+        }
+    </script>
+    <script>
+        function showTime(){
+            let now = new Date();
+            let time = now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML = time;
+            setInterval(showTime, 1000);
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

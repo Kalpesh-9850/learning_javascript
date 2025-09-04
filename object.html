@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fname : "Kalpesh",
+            Lname: "Narkhede",
+            age: 21,
+            email : "narkhedekalpesho9850@gmail.com",
+            players : ["virat","dhoni",'rohit',"surya"],
+            address : {
+                'city' : "pune",
+                'country' : "India"
+
+            },
+            phone : 9867568856
+
+        };
+        document.writeln("My name is " + a.fname + " " + a.Lname);
+        document.writeln("<br>");
+        document.writeln("My age is " + a.age);
+        document.writeln("<br>");
+        document.writeln("My email is " + a.email);
+        document.writeln("<br>");
+        document.writeln("My favourite players are " + a.players);
+        document.writeln("<br>");
+        document.writeln("My city is " + a.address.city);
+        document.writeln("<br>");
+        document.writeln("My country is " + a.address.country);
+        document.writeln("<br>");
+        document.writeln("My phone number is " + a.phone);
+        document.writeln("<br>");
+    </script>
+
+    <script>
+        var employee = [{name : "Kalpesh", age : 21, city : "Pune"},
+                        {name : "Jayesh", age : 22, city : "Mumbai"},
+                        {name : "Amit", age : 23, city : "Banglore"},
+                        {name : "Rajesh", age : 24, city : "Chennai"}];
+                        for(let a = 0; a < employee.length; a++){
+                            document.writeln(employee[a].name + " " + employee[a].age + " " + employee[a].city);
+                            document.writeln("<br>");   
+                        }  
+    </script>
+</body>
+</html>
